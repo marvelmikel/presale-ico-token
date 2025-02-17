@@ -43,7 +43,7 @@ async function main() {
   console.log("💰 Amount for 5 tokens:", ethers.utils.formatUnits(usdtAmount, 6), "USDT");
 
   // ✅ Buy tokens (2 tokens for testing)
-  await buyTokens(tokenICO, usdtContract, wallet, "2");
+  await buyTokens(tokenICO, usdtContract, wallet, "200");
 
   // ✅ Check total tokens sold in TokenICO contract
   const totalTokensSold = await tokenICO.totalTokensSold();
